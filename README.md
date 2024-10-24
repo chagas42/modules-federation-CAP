@@ -1,7 +1,3 @@
-Aqui está um exemplo de **README.md** para seu projeto de Module Federation, explicando a estrutura e como rodar o **provider** e **consumer**:
-
----
-
 # **Modules Federation Base Example 🚀**
 
 Este repositório serve como **base para Module Federation**, contendo duas aplicações:
