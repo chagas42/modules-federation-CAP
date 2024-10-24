@@ -7,7 +7,7 @@ Este repositório serve como **base para Module Federation**, contendo duas apli
 
 ## **Descrição**
 
-Este projeto demonstra um exemplo básico de **Module Federation** utilizando o Webpack 5. A aplicação **`federation_provider`** expõe um **componente Button**, e o **`federation_consumer`** o consome dinamicamente em tempo de execução.
+Este projeto demonstra um exemplo básico de **Module Federation** utilizando o RsBuild. A aplicação **`federation_provider`** expõe um **componente Button**, e o **`federation_consumer`** o consome dinamicamente em tempo de execução.
 
 ---
 
@@ -21,14 +21,14 @@ modules-federation-CAP/
 │   │   ├── button.tsx       # Componente Button exportado
 │   │   ├── bootstrap.tsx
 │   │   └── index.ts
-│   └── rsbuild.config.ts    # Configuração do Webpack (Provider)
+│   └── rsbuild.config.ts    # Configuração do Rsbuild (Provider)
 │
 ├── federation_consumer/     # Aplicação que consome o botão (Consumer)
 │   ├── src/
 │   │   ├── bootstrap.tsx
 │   │   ├── App.tsx # Componente principal que usa o Button
 │   │   └── index.ts         # Entry point da aplicação Consumer
-│   └── rsbuild.config.ts    # Configuração do Webpack (Consumer)
+│   └── rsbuild.config.ts    # Configuração do Rsbuild (Consumer)
 │
 └── README.md                # Documentação do projeto
 ```
@@ -179,7 +179,7 @@ module.exports = {
 
 ## **Possíveis Problemas**
 
-- **CORS**: Se houver erros de CORS, configure os headers adequados no Webpack Dev Server.
+- **CORS**: Se houver erros de CORS, configure os headers adequados no Rsbuild Dev Server.
 - **Versão do React**: Certifique-se de que ambas as aplicações estão usando a **mesma versão** do React.
 - **Portas em Uso**: Verifique se as portas 3001 e 3002 estão disponíveis.
 
