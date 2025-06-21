@@ -1,4 +1,4 @@
-# **Modules Federation Base Example 🚀**
+
 
 Este repositório serve como **base para Module Federation**, contendo duas aplicações:
 
